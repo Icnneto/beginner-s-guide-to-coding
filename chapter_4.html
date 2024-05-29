@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's guide - Data Structures</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="sidebar" class="container__button">
+            <label for="sidebar">
+                <span class="header__sidebar-hamburguer container__image"></span> 
+            </label> 
+            <ul class="navigation-sidebar">
+                <li class="navigation-sidebar__item">
+                    <a href="index.html" class="navigation-sidebar__link">Home</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="disclaimer.html" class="navigation-sidebar__link">Disclaimer</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_1.html" class="navigation-sidebar__link">What is Programming?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_2.html" class="navigation-sidebar__link">How do we Write Code?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_3.html" class="navigation-sidebar__link">Programming Logic</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_4.html" class="navigation-sidebar__link">Data Structures</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_5.html" class="navigation-sidebar__link">Git and GitHub</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_6.html" class="navigation-sidebar__link">What are Frameworks?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_7.html" class="navigation-sidebar__link">Front-end, Back-end and Full Stack</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="conclusion.html" class="navigation-sidebar__link">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__menu">
+            <a href="index.html" class="menu__link">Home</a>
+            <a href="disclaimer.html" class="menu__link">Disclaimer</a>
+        </div>
+        <div class="header__contact">
+            <a class="contact__link" href="https://github.com/Icnneto" target="_blank">GitHub</a>
+            <a class="contact__link" href="https://www.linkedin.com/in/israel-nunes-825968144/" target="_blank">Linkedin</a>
+        </div>
+    </header>
+    <main>
+        <section class="navigation__menu">
+            <!-- Slider main container -->
+            <div class="swiper__diff">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="chapter_1.html" class="navigation-menu__link">What is Programming?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_2.html" class="navigation-menu__link">How do we Write Code?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_3.html" class="navigation-menu__link">Programming Logic</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_4.html" class="navigation-menu__link">Data Structures</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_5.html" class="navigation-menu__link">Git and GitHub</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_6.html" class="navigation-menu__link">What are Frameworks?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_7.html" class="navigation-menu__link">Front-end, Back-end and Full Stack</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="conclusion.html" class="navigation-menu__link">Conclusion</a>
+                    </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="chapter">
+            <div class="chapter__content">
+                <h2 class="chapter__content-title">Data Structures</h2>
+                <p class="chapter__content-paragraph">
+                    Data structures in programming refer to the way data is <span class="highlight__text">organized, stored, and manipulated in a computer's memory</span>. 
+                    They are essential for efficient data storage, retrieval, and manipulation, and they provide a means to represent relationships between data elements.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Arrays</h3>
+                <p class="chapter__content-paragraph">
+                    <span class="highlight__text">Arrays are used to store multiple values of the same type</span> under a single variable name, arranged in contiguous memory locations. 
+                    <span class="highlight__text">Each element in the array is accessed by its index</span>, which <span class="highlight__text">represents its position</span> within the array. 
+                </p>
+                <p class="chapter__content-paragraph">    
+                    They allow for efficient storage and retrieval of data elements and are commonly used in various programming languages for a wide range of applications, such as storing lists of items, managing data sets, and representing multi-dimensional structures.
+                </p>
+                <ol class="list" type="1">
+                    <li class="list__item">
+                        <h4 class="list__item-title">One-dimensional arrays</h4>
+                        <p class="list__item-text">
+                            also known as vectors or lists, are arrays with a single row or column. They are the simplest form of arrays and are often used to store a collection of values of the same data type, such as integers or characters
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Two-dimensional arrays</h4>
+                        <p class="list__item-text">
+                            on the other hand, are arrays with two dimensions, typically represented as rows and columns. They are arranged in a grid-like structure, allowing for the storage of data in rows and columns. 
+                            Two-dimensional arrays are commonly used to represent matrices, tables, or grids of values, such as a spreadsheet or a game board
+                        </p>
+                    </li>
+                </ol>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <figure class="chapter__content-image__caption">
+                                <img class="chapter__content-image" src="assets/one-dimensional_array.svg" alt="image of an array">
+                                <figcaption class="chapter__content-image__description">One-dimensional array (Author)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="chapter__content-image__caption">
+                                <img class="chapter__content-image" src="assets/two-dimensional_array.svg" alt="image of an array">
+                                <figcaption class="chapter__content-image__description">Two-dimensional array (Author)</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <p class="chapter__content-paragraph">
+                    It is important to remember that all of the above represents only a superficial demonstration of what arrays are. 
+                </p>
+                <p class="chapter__content-paragraph">
+                    If you want to complement what you've read, I suggest to take a look on the video below.
+                </p>
+                <iframe class="youtube__api" width="380" height="215" src="https://www.youtube.com/embed/QJNwK2uJyGs?si=uVKf5GsiuYY9Byt1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Linked Lists</h3>
+                <p class="chapter__content-paragraph">
+                    A linear data structure consisting of a <span class="highlight__text">sequence of elements, called nodes, where each node contains a value and a reference (or pointer) to the next node in the sequence</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Unlike arrays, where elements are stored in contiguous memory locations, linked lists use pointers to connect nodes, allowing for dynamic memory allocation and flexible insertion and deletion operations.
+                </p>
+                <ol class="list" type="1">
+                    <li class="list__item">
+                        <h4 class="list__item-title">Singly Linked List</h4>
+                        <p class="list__item-text">
+                            each node contains a data element and a pointer to the next node in the sequence. The last node points to NULL, indicating the end of the list
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Doubly Linked List</h4>
+                        <p class="list__item-text">
+                            each node contains a data element, a pointer to the next node, and a pointer to the previous node. This allows for traversal in both forward and backward directions
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Circular Linked List</h4>
+                        <p class="list__item-text">
+                            similar to a singly linked list, but the last node points back to the first node, forming a circular structure. This can be useful for certain applications, such as representing a circular buffer.
+                        </p>
+                    </li>
+                </ol>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/linked__lists.svg" alt="image of the three different types of linked lists">
+                    <figcaption class="chapter__content-image__description">Types of Linked Lists (Tsuji, Yutaro. 2019)</figcaption>
+                </figure>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Stacks</h3>
+                <p class="chapter__content-paragraph">
+                    A Stack is a <span class="highlight__text">linear data structure, which means that the data is organized in a sequence</span>, one after another. 
+                </p>
+                <p class="chapter__content-paragraph">
+                    They are very <span class="highlight__text">similar to arrays, but is important to note that</span>in arrays you can remove and add values wherever you'd like, whereas in stacks <span class="highlight__text">you can only remove and add values from one side, the top</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    To understand that, think of it as a stack of coins, in order to get to any coin in the middle of the stack, you have to start from the top and remove coins one by one until you get to the one you want. 
+                </p>
+                <p class="chapter__content-paragraph">
+                    Therefore, <span class="highlight__text">this data structure operates on the Last In, First Out (LIFO) principle</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    It is important to know that stacks are the building blocks of function calls and recursive functions. For further information, check this <a class="reference__link" href="https://medium.com/swlh/stack-data-structure-practical-applications-operations-e4e308008752" target="_blank">article on medium</a>.
+                </p>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/stack__data-structure.svg" alt="image of stack data structure">
+                    <figcaption class="chapter__content-image__description">Stack Data Structure (Author)</figcaption>
+                </figure>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Trees</h3>
+                <p class="chapter__content-paragraph">
+                    A hierarchical data structure composed of nodes, where <span class="highlight__text">each node contains a value</span> and references (or pointers) to its child nodes.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Trees are used to represent hierarchical relationships between elements, such as the hierarchical structure of file systems, organization charts, or the structure of HTML documents. 
+                    They are also fundamental for implementing various data structures and algorithms, such as binary search trees and heaps.
+                </p>
+                <p class="chapter__content-paragraph">
+                    This guide doesn't aim to exhaustively delve into every detail of this complex topic. If you wish to learn more about the types of trees, read this <a class="reference__link" href="https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/" target="_blank">article on freeCodeCamp</a>.
+                </p>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/trees__data-structure.svg" alt="image of trees data structure">
+                    <figcaption class="chapter__content-image__description">Trees overview (Vijini, Mallawaarachchi. 2020)</figcaption>
+                </figure>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Graphs</h3>
+                <p class="chapter__content-paragraph">
+                    Graphs are a <span class="highlight__text">non-linear data structure consisting of a collection of nodes (vertices) and a set of edges that connect pairs of nodes</span>. Each edge represents a relationship or connection between two vertices.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Graphs are used to represent networks of interconnected entities, such as social networks (e.g. in Facebook, each person is represented with a vertex or node and each node is a structure and contains information like personalized name, gender, or location), 
+                    computer networks, transportation networks (e.g GPS systems and Google maps use graphs to find the shortest path from one destination to another), and more.
+                </p>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/graphs__data-structure.svg" alt="image of graphs data structure">
+                    <figcaption class="chapter__content-image__description">Graphs overview (Author)</figcaption>
+                </figure>
+                <p class="chapter__content-paragraph">
+                    There's a lot to explore when it comes to Graphs implementation and usage, if you want to further your knowledge check this <a class="reference__link" href="https://medium.com/sysco-labs/graphs-in-data-structures-and-algorithms-aaf110c2670c" target="_blank">article on medium</a>.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Hash Tables</h3>
+                <p class="chapter__content-paragraph">
+                    A Hash Table is a data structure that <span class="highlight__text">allows you to store and retrieve values efficiently using a key-value pair mapping</span> (it can map keys to values).
+                </p>
+                <p class="chapter__content-paragraph">
+                    A hash table <span class="highlight__text">works by using a hash function to transform the key (input) into an index or address in the underlying array where the corresponding value is stored</span> (Majeed, Ahsan. 2023).
+                </p>
+                <p class="chapter__content-paragraph">
+                    When adding a key-value pair into the hash table, the hash function is utilized to ascertain the index where the value ought to be placed. Similarly, when retrieving a value using a key, the hash function is employed once more to locate the corresponding index and retrieve the associated value.
+                </p>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/hash__data-structure.svg" alt="image of a hash data structure">
+                    <figcaption class="chapter__content-image__description">Hash Function (TutorialsPoint - DSA Hash Table)</figcaption>
+                </figure>
+                <p class="chapter__content-paragraph">
+                    As I often emphasize, this topic has way more details to explore and understand, if you wish to take a deeper dive I suggest this <a class="reference__link" href="https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm" target="_blank">tutorial</a> 
+                    or this <a class="reference__link" href="https://medium.com/@ahsan.majeed086/data-structure-and-algorithms-hash-table-1a8ef93f58a0" target="_blank">article on medium</a>
+                </p>
+            </div>
+        </section>
+        <section class="navigation__chapters">
+            <div class="navigation__chapters-buttons">
+                <a class="chapters-buttons__link" href="chapter_3.html">< Previous</a>
+                <a class="chapters-buttons__link" href="chapter_5.html">Next ></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4 class="footer__references-title">Inspired by</h4>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>
+        </h3>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.youtube.com/watch?v=zOjov 2OZ0E&ab_channel=freeCodeCamp.org">
+                Introduction to Programming and Computer Science
+            </a>
+        </h3>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>

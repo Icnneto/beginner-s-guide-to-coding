@@ -1,0 +1,45 @@
+@import url(styles/header.css);
+@import url(styles/home.css);
+@import url(styles/chapter.css);
+@import url(styles/swiper.css);
+@import url(styles/footer.css);
+
+:root {
+    --background-color: #F2F2F0;
+    --footer-color: #E9E8E8;
+    --title-color: #012840;
+    --subtitle-color: #024873;
+    --header-color: #011F26;
+    --light-green: #0FF2F2;
+    --font-color: #0D0D0D;
+    --medium-blue: #0CB1F2;
+    --light-blue: #0CC8F2;
+    --reference-color: #320075;
+    --main-font-family: "Poppins";
+    --title-font-family: "Clash Display";
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font-family);
+    color: var(--font-color);
+    font-size: 1rem;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+
+main {
+    margin: 2rem 1.15rem;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 0;
+
+    }
+}
+
+
+
+

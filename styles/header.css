@@ -1,0 +1,138 @@
+header{
+  display:block;
+  position:sticky;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: var(--header-color);
+  z-index: 99;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__image {
+  padding: 1.5rem;
+}
+
+.header__sidebar-hamburguer {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-image: url(../assets/Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.navigation-sidebar {
+  background: var(--background-color);
+  box-shadow: 0rem 0.0875rem 0.15rem #606B73;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: auto;
+}
+
+.container__button:checked~.navigation-sidebar {
+  display: block;
+}
+
+.container__button {
+  display: none;
+}
+
+.navigation-sidebar__item {
+  padding: 0.875em;
+}
+
+.navigation-sidebar__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+.header__contact {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: var(--background-color);
+  border: 0.1rem solid var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__media-screen {
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    display: none;
+  }
+
+  .header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__contact {
+    padding: 0 2rem;
+  }
+
+  .contact__link {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .header__menu {
+    display: block;
+    padding: 0 2rem;
+  }
+
+  .menu__link {
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 0.125rem solid var(--background-color);
+    color: var(--background-color);
+    margin-right: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1380px) {
+
+  .contact__link:hover {
+    color: var(--light-blue);
+    border: 0.1rem solid var(--medium-blue);
+  }
+
+  .menu__link:hover {
+    border-bottom: 0.125rem solid var(--medium-blue);
+    color: var(--medium-blue);
+  }
+
+}
+

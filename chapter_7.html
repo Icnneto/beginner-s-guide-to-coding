@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's guide - Front-end, Back-end and Full Stack</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="sidebar" class="container__button">
+            <label for="sidebar">
+                <span class="header__sidebar-hamburguer container__image"></span> 
+            </label> 
+            <ul class="navigation-sidebar">
+                <li class="navigation-sidebar__item">
+                    <a href="index.html" class="navigation-sidebar__link">Home</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="disclaimer.html" class="navigation-sidebar__link">Disclaimer</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_1.html" class="navigation-sidebar__link">What is Programming?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_2.html" class="navigation-sidebar__link">How do we Write Code?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_3.html" class="navigation-sidebar__link">Programming Logic</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_4.html" class="navigation-sidebar__link">Data Structures</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_5.html" class="navigation-sidebar__link">Git and GitHub</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_6.html" class="navigation-sidebar__link">What are Frameworks?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_7.html" class="navigation-sidebar__link">Front-end, Back-end and Full Stack</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="conclusion.html" class="navigation-sidebar__link">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__menu">
+            <a href="index.html" class="menu__link">Home</a>
+            <a href="disclaimer.html" class="menu__link">Disclaimer</a>
+        </div>
+        <div class="header__contact">
+            <a class="contact__link" href="https://github.com/Icnneto" target="_blank">GitHub</a>
+            <a class="contact__link" href="https://www.linkedin.com/in/israel-nunes-825968144/" target="_blank">Linkedin</a>
+        </div>
+    </header>
+    <main>
+        <section class="navigation__menu">
+            <!-- Slider main container -->
+            <div class="swiper__diff">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="chapter_1.html" class="navigation-menu__link">What is Programming?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_2.html" class="navigation-menu__link">How do we Write Code?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_3.html" class="navigation-menu__link">Programming Logic</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_4.html" class="navigation-menu__link">Data Structures</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_5.html" class="navigation-menu__link">Git and GitHub</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_6.html" class="navigation-menu__link">What are Frameworks?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_7.html" class="navigation-menu__link">Front-end, Back-end and Full Stack</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="conclusion.html" class="navigation-menu__link">Conclusion</a>
+                    </div>
+                </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="chapter">
+            <div class="chapter__content">
+                <h2 class="chapter__content-title">Front-end, Back-end and Full Stack</h2>
+                <p class="chapter__content-paragraph">
+                    The clear differentiation between front-end, back-end, and full-stack development has evolved over time as web development technologies and practices have advanced.
+                </p>    
+                <p class="chapter__content-paragraph">
+                    In the early days of the web, developers often had to have a broad range of skills and knowledge to handle all aspects of website creation.
+                </p>
+                <p class="chapter__content-paragraph">
+                    However, as web technologies became more sophisticated and the complexity of web applications increased, the need for specialization arose.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Front-end</h3>
+                <p class="chapter__content-paragraph">
+                    Front-end is the part of web development <span class="highlight__text">responsible for creating the visible parts of a website or web application that users interact with directly</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    It involves creating the <span class="highlight__text">layout, design, interactivity, and functionality</span> of the web pages.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Front end developers use languages such as HTML, CSS, and JavaScript, and frameworks or libraries such as Bootstrap, React, or Angular, to create responsive, dynamic, and user-friendly web interfaces.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Interesting article - <a class="reference__link" href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/" target="_blank">Front-of-the-front-end and Back-of-the-front-end Web Development</a>
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Back-end</h3>
+                <p class="chapter__content-paragraph">
+                    A back-end developer <span class="highlight__text">focuses on the server-side</span> of web development.   
+                </p>
+                <p class="chapter__content-paragraph">
+                    They <span class="highlight__text">work on the behind-the-scenes, such as logic, server configuration, also creating, storing, retrieving, and manipulating the data that powers the web pages</span> and the functionality of the web application, ensuring that the application works smoothly from the server's end.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Back-end developers commonly work with programming languages like Python, Ruby, PHP, Java, or Node.js, and frameworks like Django, Flask, Ruby on Rails, Laravel, Spring, or Express.js.
+                </p>
+                <p class="chapter__content-paragraph">
+                    More of that on - <a class="reference__link" href="https://www.coursera.org/articles/back-end-developer" target="_blank">What Does a Back-End Developer Do? - Coursera</a>
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">Full-stack</h3>
+                <p class="chapter__content-paragraph">
+                    A full-stack developer is the combination of front end and back end development, that means being proficient in both front-end and back-end development.
+                </p>
+                <p class="chapter__content-paragraph">
+                    They have the skills to work on all aspects of web development, from building the user interface to handling server-side logic and database management.
+                </p>
+                <p class="chapter__content-paragraph">
+                    They often have a broad range of expertise across multiple programming languages, frameworks, and technologies.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Explore - <a class="reference__link" href="https://www.coursera.org/articles/full-stack-developer" target="_blank">What is a Full-stack Developer? - Coursera</a>
+                </p>
+            </div>
+        </section>
+        <section class="navigation__chapters">
+            <div class="navigation__chapters-buttons">
+                <a class="chapters-buttons__link" href="chapter_6.html">< Previous</a>
+                <a class="chapters-buttons__link" href="conclusion.html">Conclusion ></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4 class="footer__references-title">Inspired by</h4>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>
+        </h3>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.youtube.com/watch?v=zOjov 2OZ0E&ab_channel=freeCodeCamp.org">
+                Introduction to Programming and Computer Science
+            </a>
+        </h3>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>

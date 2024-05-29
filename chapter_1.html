@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's guide - What is Programming?</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="sidebar" class="container__button">
+            <label for="sidebar">
+                <span class="header__sidebar-hamburguer container__image"></span> 
+            </label> 
+            <ul class="navigation-sidebar">
+                <li class="navigation-sidebar__item">
+                    <a href="index.html" class="navigation-sidebar__link">Home</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="disclaimer.html" class="navigation-sidebar__link">Disclaimer</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_1.html" class="navigation-sidebar__link">What is Programming?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_2.html" class="navigation-sidebar__link">How do we Write Code?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_3.html" class="navigation-sidebar__link">Programming Logic</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_4.html" class="navigation-sidebar__link">Data Structures</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_5.html" class="navigation-sidebar__link">Git and GitHub</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_6.html" class="navigation-sidebar__link">What are Frameworks?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_7.html" class="navigation-sidebar__link">Front-end, Back-end and Full Stack</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="conclusion.html" class="navigation-sidebar__link">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__menu">
+            <a href="index.html" class="menu__link">Home</a>
+            <a href="disclaimer.html" class="menu__link">Disclaimer</a>
+        </div>
+        <div class="header__contact">
+            <a class="contact__link" href="https://github.com/Icnneto" target="_blank">GitHub</a>
+            <a class="contact__link" href="https://www.linkedin.com/in/israel-nunes-825968144/" target="_blank">Linkedin</a>
+        </div>
+    </header>
+    <main>
+        <section class="navigation__menu">
+            <!-- Slider main container -->
+            <div class="swiper__diff">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="chapter_1.html" class="navigation-menu__link">What is Programming?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_2.html" class="navigation-menu__link">How do we Write Code?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_3.html" class="navigation-menu__link">Programming Logic</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_4.html" class="navigation-menu__link">Data Structures</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_5.html" class="navigation-menu__link">Git and GitHub</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_6.html" class="navigation-menu__link">What are Frameworks?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_7.html" class="navigation-menu__link">Front-end, Back-end and Full Stack</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="conclusion.html" class="navigation-menu__link">Conclusion</a>
+                    </div>
+                </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="chapter">
+            <div class="chapter__content">
+                <h2 class="chapter__content-title">What is Programming?</h2>
+                <p class="chapter__content-paragraph"> Essentially, is attempting to get a computer to complete a <span class="highlight__text">specific task</span> without making mistakes. 
+                    Computers only understand <span class="highlight__text">machine code</span>, which is a numerical language known as <span class="highlight__text">Binary</span> (0's and 1's).
+                </p>
+                <p class="chapter__content-paragraph"> Therefore, in order to talk to a computer you must first <span class="highlight__text">translate</span> your English instructions to Binary.
+                    That is when <span class="highlight__text">Proramming Language</span> comes into play. They serve as a middle-man to <span class="highlight__text">translate your programming into machine code</span>. 
+                    They're sort of an interpreter, converting languages (such as English) into other languages (such as machine code).
+                </p>
+                <img class="chapter__content-image__diff" src="assets/binary__image.svg" alt="image of binary numbers in a computer">
+            </div>
+        </section>
+        <section class="navigation__chapters">
+            <div class="navigation__chapters-buttons">
+                <a class="chapters-buttons__link" href="disclaimer.html">< Previous</a>
+                <a class="chapters-buttons__link" href="chapter_2.html">Next ></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4 class="footer__references-title">Inspired by</h4>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>
+        </h3>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.youtube.com/watch?v=zOjov 2OZ0E&ab_channel=freeCodeCamp.org">
+                Introduction to Programming and Computer Science
+            </a>
+        </h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>

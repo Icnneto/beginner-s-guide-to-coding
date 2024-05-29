@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's guide - Git and GitHub</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="sidebar" class="container__button">
+            <label for="sidebar">
+                <span class="header__sidebar-hamburguer container__image"></span> 
+            </label> 
+            <ul class="navigation-sidebar">
+                <li class="navigation-sidebar__item">
+                    <a href="index.html" class="navigation-sidebar__link">Home</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="disclaimer.html" class="navigation-sidebar__link">Disclaimer</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_1.html" class="navigation-sidebar__link">What is Programming?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_2.html" class="navigation-sidebar__link">How do we Write Code?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_3.html" class="navigation-sidebar__link">Programming Logic</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_4.html" class="navigation-sidebar__link">Data Structures</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_5.html" class="navigation-sidebar__link">Git and GitHub</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_6.html" class="navigation-sidebar__link">What are Frameworks?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_7.html" class="navigation-sidebar__link">Front-end, Back-end and Full Stack</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="conclusion.html" class="navigation-sidebar__link">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__menu">
+            <a href="index.html" class="menu__link">Home</a>
+            <a href="disclaimer.html" class="menu__link">Disclaimer</a>
+        </div>
+        <div class="header__contact">
+            <a class="contact__link" href="https://github.com/Icnneto" target="_blank">GitHub</a>
+            <a class="contact__link" href="https://www.linkedin.com/in/israel-nunes-825968144/" target="_blank">Linkedin</a>
+        </div>
+    </header>
+    <main>
+        <section class="navigation__menu">
+            <!-- Slider main container -->
+            <div class="swiper__diff">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="chapter_1.html" class="navigation-menu__link">What is Programming?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_2.html" class="navigation-menu__link">How do we Write Code?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_3.html" class="navigation-menu__link">Programming Logic</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_4.html" class="navigation-menu__link">Data Structures</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_5.html" class="navigation-menu__link">Git and GitHub</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_6.html" class="navigation-menu__link">What are Frameworks?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_7.html" class="navigation-menu__link">Front-end, Back-end and Full Stack</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="conclusion.html" class="navigation-menu__link">Conclusion</a>
+                    </div>
+                </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="chapter">
+            <div class="chapter__content">
+                <h2 class="chapter__content-title">Git and Github</h2>
+                <p class="chapter__content-paragraph">
+                    I'm certain you've come across Git or GitHub at some point, but if not, now's the perfect opportunity to discover their significance.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Understanding the usage of Git and GitHub is essential in modern software development practices.
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">First of all, what is VCS?</h3>
+                <p class="chapter__content-paragraph">
+                    Version Control Systems (VCS) are <span class="highlight__text">software tools that help manage changes to code or other documents over time</span>. They enable multiple contributors to collaborate on a project by tracking modifications, maintaining a history of changes, and facilitating coordination among team members
+                </p>
+                <p class="chapter__content-paragraph">
+                    VCS allows users to revert to previous versions of files, compare changes, and merge modifications made by different individuals.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Git, Subversion (SVN), and Mercurial are popular examples of Version Control Systems used in software development.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">What is Git?</h3>
+                <p class="chapter__content-paragraph">
+                    Git is a distributed version control system (DVCS) designed to track changes in source code during software development. Developed by Linus Torvalds in 2005, Git has become one of the most widely used VCS tools in the industry.
+                </p>
+                <p class="chapter__content-paragraph">
+                    It allows developers to collaborate on projects efficiently, manage different versions of files, and coordinate work among team members.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Git gained popularity for many reasons, to point out a few, it is important to highlight that Git <span class="highlight__text">introduced a decentralized approach to version control, allowing each user to have a complete copy of the repository with its full history</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Also, it has a <span class="highlight__text">GitHub integration</span>, which is a web-based hosting service for Git repositories vastly used from beginners to experienced developers.
+                </p>
+                <p class="chapter__content-paragraph">
+                    To fully understand how it works and it's usage, I suggest to read the original <a class="reference__link" href="https://git-scm.com/book/en/v2" target="_blank">documentation</a>
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">What is Github?</h3>
+                <p class="chapter__content-paragraph">
+                    GitHub is a web-based platform built around Git, as mentioned before.
+                </p>
+                <p class="chapter__content-paragraph">
+                    It provides a centralized hub for hosting, managing, and collaborating on Git repositories.
+                </p>
+                <p class="chapter__content-paragraph">
+                    GitHub offers a wide range of features and tools to facilitate software development workflows, project management, and collaboration among developers.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Why everyone talks about it?   
+                </p>
+                <ol class="list" type="a">
+                    <li class="list__item">
+                        <h4 class="list__item-title">Repository Hosting</h4>
+                        <p class="list__item-text">
+                            allows users to create Git repositories for their projects, making it easy to store and manage code, documentation, and other project files.
+                            Repositories can be public, accessible to anyone, or private, restricted to authorized collaborators
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Collaboration Tools</h4>
+                        <p class="list__item-text">
+                            provides various collaboration features such as pull requests, issues, and project boards. 
+                            Pull requests enable developers to propose changes, review code, and merge contributions into the main codebase. 
+                            Issues can be used to track bugs, feature requests, or tasks, fostering communication and coordination among team members.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Community and Social Coding</h4>
+                        <p class="list__item-text">
+                            GitHub has a large and active community of developers, making it a hub for open-source collaboration. 
+                            Users can discover, fork, and contribute to public repositories, engage with other developers through discussions and forums, and showcase their work through profiles and contributions.
+                        </p>
+                    </li>
+                </ol>
+                <p class="chapter__content-paragraph">
+                    Now it's time for you to create a profile and start exploring by yourself, and the best way to do it, is by clicking <a class="reference__link" href="https://github.com/" target="_blank">here</a>.
+                </p>
+            </div>
+        </section>
+        <section class="navigation__chapters">
+            <div class="navigation__chapters-buttons">
+                <a class="chapters-buttons__link" href="chapter_4.html">< Previous</a>
+                <a class="chapters-buttons__link" href="chapter_6.html">Next ></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4 class="footer__references-title">Inspired by</h4>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>
+        </h3>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.youtube.com/watch?v=zOjov 2OZ0E&ab_channel=freeCodeCamp.org">
+                Introduction to Programming and Computer Science
+            </a>
+        </h3>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>

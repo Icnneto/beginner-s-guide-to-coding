@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's guide - Programming Logic</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="sidebar" class="container__button">
+            <label for="sidebar">
+                <span class="header__sidebar-hamburguer container__image"></span> 
+            </label> 
+            <ul class="navigation-sidebar">
+                <li class="navigation-sidebar__item">
+                    <a href="index.html" class="navigation-sidebar__link">Home</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="disclaimer.html" class="navigation-sidebar__link">Disclaimer</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_1.html" class="navigation-sidebar__link">What is Programming?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_2.html" class="navigation-sidebar__link">How do we Write Code?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_3.html" class="navigation-sidebar__link">Programming Logic</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_4.html" class="navigation-sidebar__link">Data Structures</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_5.html" class="navigation-sidebar__link">Git and GitHub</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_6.html" class="navigation-sidebar__link">What are Frameworks?</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="chapter_7.html" class="navigation-sidebar__link">Front-end, Back-end and Full Stack</a>
+                </li>
+                <li class="navigation-sidebar__item">
+                    <a href="conclusion.html" class="navigation-sidebar__link">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__menu">
+            <a href="index.html" class="menu__link">Home</a>
+            <a href="disclaimer.html" class="menu__link">Disclaimer</a>
+        </div>
+        <div class="header__contact">
+            <a class="contact__link" href="https://github.com/Icnneto" target="_blank">GitHub</a>
+            <a class="contact__link" href="https://www.linkedin.com/in/israel-nunes-825968144/" target="_blank">Linkedin</a>
+        </div>
+    </header>
+    <main>
+        <section class="navigation__menu">
+            <!-- Slider main container -->
+            <div class="swiper__diff">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="chapter_1.html" class="navigation-menu__link">What is Programming?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_2.html" class="navigation-menu__link">How do we Write Code?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_3.html" class="navigation-menu__link">Programming Logic</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_4.html" class="navigation-menu__link">Data Structures</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_5.html" class="navigation-menu__link">Git and GitHub</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_6.html" class="navigation-menu__link">What are Frameworks?</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="chapter_7.html" class="navigation-menu__link">Front-end, Back-end and Full Stack</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="conclusion.html" class="navigation-menu__link">Conclusion</a>
+                    </div>
+                </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+        <section class="chapter">
+            <div class="chapter__content">
+                <h2 class="chapter__content-title">Programming Logic</h2>
+                <p class="chapter__content-paragraph">
+                    Programming logic <span class="highlight__text">serves as the backbone of computer programming</span>, 
+                    just as a recipe tells you step-by-step how to make a dish, programming logic <span class="highlight__text">guides a computer through 
+                    a series of instructions to perform a task</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    In programming, <span class="highlight__text">logic constructs such as conditional statements (if-else), loops (for, while), variables (placeholders for data), 
+                    and functions that provide the framework for organizing and manipulating data</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    It is the foundation to solve any given problem when developing a software. 
+                    It <span class="highlight__text">precedes the use of any specific programming language</span>, laying the groundwork for effective problem-solving and algorithmic 
+                    thinking.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">What are Variables?</h3>
+                <p class="chapter__content-paragraph">
+                    Something that can <span class="highlight__text">store information, be referenced and manipulated</span>. Each variable has a <span class="highlight__text">type, a name and a piece of information</span> 
+                    stored inside of it (just like a cardboard box);
+                </p>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/variables.png" alt="image of cardbooard boxes explaining how variables work">
+                    <figcaption class="chapter__content-image__description">What is a Variable? (Curtis, Steven. 2019)</figcaption>
+                </figure>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-sub-subtitle">Types of Variables</h3>
+                <p class="chapter__content-paragraph">
+                    There are many types of variables, but we will be focusing on <span class="highlight__text">primitive type variables</span>, and those are:
+                </p>
+                <ol class="list" type="a">
+                    <li class="list__item">
+                        <h4 class="list__item-title">Integer</h4>
+                        <p class="list__item-text">
+                            a variable that can store an <span class="highlight__text">integer number. Can't and will not hold any decimal values</span>
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Boolean</h4>
+                        <p class="list__item-text">
+                            can only store a value of either <span class="highlight__text">TRUE</span> or <span class="highlight__text">FALSE</span>
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Floats</h4>
+                        <p class="list__item-text">floating point data types, it is able to <span class="highlight__text">store numbers with decimal places</span></p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Double</h4>
+                        <p class="list__item-text">
+                            very similar to the variable Floats. It is also a floating point data type, it is able to <span class="highlight__text">store numbers with decimal places</span>. 
+                            Can store up to <span class="highlight__text">64 bits</span> of information
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Strings</h4>
+                        <p class="list__item-text">
+                            can store strings of letters (words and sentences). Useful for <span class="highlight__text">displaying text</span> 
+                            and <span class="highlight__text">storing input information</span> (information the user puts into our program)
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Char</h4>
+                        <p class="list__item-text">
+                            char stands for <span class="highlight__text">character</span>. Each char variable <span class="highlight__text">holds only one</span> character - "*" "!" "R" ... 
+                            Useful when a programmer wants to read one button of one character in a string without using a String variable.
+                        </p>
+                    </li>
+                </ol>
+                <p class="chapter__content-paragraph">
+                    Sometimes you're going to want to keep track of things such as a user's <span class="highlight__text">name</span> or <span class="highlight__text">score</span>, and that's why variables are so useful. 
+                    By creating a variable you can store this information into it and then <span class="highlight__text">reference, add to or modify it</span>.
+                    When naming variables in programming, there are some common <span class="highlight__text">rules adn conventions</span> that are typically followed across various programming languages. 
+                    These rules help improve code readability and maintainability. Here are some general guidelines:
+                </p>
+                <ol class="list" type="1">
+                    <li class="list__item">
+                        <h4 class="list__item-title">Use meaningful names</h4>
+                        <p class="list__item-text">
+                            choose variable names that accurately describe the data they hold or the purpose they serve in your code. 
+                            This makes your code easier to understand for yourself and others who may read it later
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">camelCase convention</h4>
+                        <p class="list__item-text">
+                            Most programmers name variables according to <span class="highlight__text">camelCase</span>. 
+                            <span class="highlight__text">Don't</span> capitalize the first word, but <span class="highlight__text">capitalize the first letter of all words after it</span> (e.g., nameThisVariable)
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Start with a letter or underscore</h4>
+                        <p class="list__item-text">
+                            variable names should begin with a letter (a-z, A-Z) or an underscore (_). They <span class="highlight__text">cannot start with a number</span>
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Avoid reserved words</h4>
+                        <p class="list__item-text">
+                            don't use keywords or reserved words of the programming language you're working with as variable names
+                        </p>
+                    </li>
+                </ol>
+                <p class="chapter__content-paragraph">
+                    Following these guidelines while naming variables can contribute significantly to enhancing the clarity and organization of your codebase. 
+                    By choosing meaningful and descriptive names, following established conventions, and maintaining consistency throughout your code, you make 
+                    it easier for yourself and other developers to understand, modify, and maintain the code over time.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">What are Conditional Statements?</h3>
+                <p class="chapter__content-paragraph">
+                    Conditional statements are fundamental elements of programming logic that allow developers to <span class="highlight__text">control the flow of execution in 
+                    a program based on certain conditions or criteria</span>. They enable programs to make decisions dynamically during runtime, adapting their 
+                    behavior according to the input or state of the program.
+                </p>
+                <p class="chapter__content-paragraph">
+                    The most common type of conditional statement is the "if statement," which evaluates a condition and executes a block of code if the condition is true. 
+                    Here's a basic example:
+                </p>
+                <figure class="chapter__content-image__caption">
+                    <img class="chapter__content-image" src="assets/If_statement.svg" alt="image of a conditional statemen in Vs Code">
+                    <figcaption class="chapter__content-image__description">Javascript in VSCode (Author, 2024)</figcaption>
+                </figure>
+                <p class="chapter__content-paragraph">
+                    In this example, if the condition evaluates to <span class="highlight__text">true</span>, the code inside the curly braces is executed. 
+                    Otherwise, it's skipped and an alternative block of code is executed if the condition is <span class="highlight__text">false</span>.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">What are Loops?</h3>
+                <p class="chapter__content-paragraph">
+                    Loops are <span class="highlight__text">control structures that allow you to execute a block of code repeatedly based on a specified condition</span>. 
+                    They are used when you want to perform the same or similar tasks multiple times without having to duplicate code.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Effective use of loops requires understanding the problem at hand and devising a strategy to iterate over data or execute certain actions multiple times until a specific condition is met. 
+                    This ability to control the flow of execution through repetition is a fundamental aspect of programming logic.
+                </p>
+                <p class="chapter__content-paragraph">
+                    There are three main types of loops:
+                </p>
+                <ol class="list" type="1">
+                    <li class="list__item">
+                        <h4 class="list__item-title">For loop</h4>
+                        <p class="list__item-text">
+                            used when you know exactly how many times you want to execute a block of code. It iterates over a sequence (such as a range of numbers) and executes the block of code for each item in the sequence
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">While loop</h4>
+                        <p class="list__item-text">
+                            used when you want to execute a block of code <span class="highlight__text">as long as a specified condition is true</span>. It keeps looping until the condition becomes false
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">Do-while loop</h4>
+                        <p class="list__item-text">
+                            similar to a while loop, but the block of code is executed at least once before the condition is checked (not available in all programming languages)
+                        </p>
+                    </li>
+                </ol>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <figure class="chapter__content-image__caption">
+                                <img class="chapter__content-image" src="assets/for_loop.svg" alt="image of a for loop statement">
+                                <figcaption class="chapter__content-image__description">For loop (ChatGPT 3.5)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="chapter__content-image__caption">
+                                <img class="chapter__content-image" src="assets/while_loop.svg" alt="image of a while loop statement">
+                                <figcaption class="chapter__content-image__description">While loop (ChatGPT 3.5)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="chapter__content-image__caption">
+                                <img class="chapter__content-image" src="assets/do-while_loop.svg" alt="image of a do-while loop statement">
+                                <figcaption class="chapter__content-image__description">Do-while loop (ChatGPT 3.5)</figcaption>
+                            </figure>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <p class="chapter__content-paragraph">
+                    In summary, loops are fundamental to many programming tasks, such as iterating over elements in a list or performing repetitive calculations. 
+                    They help in writing more concise and efficient code.
+                </p>    
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-subtitle">What are Functions?</h3>
+                <p class="chapter__content-paragraph">
+                    A function is a self-contained <span class="highlight__text">block of code that performs a specific task or set of tasks</span>. 
+                    Functions provide a way to modularize code by encapsulating a series of instructions that <span class="highlight__text">can be reused throughout a program</span>. 
+                    They allow you to break down complex problems into smaller, more manageable parts, <span class="highlight__text">making your code more organized, readable, and maintainable</span>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    Functions <span class="highlight__text">typically take input parameters (arguments)</span> and may produce output (return value), although they can also perform actions without returning a value. 
+                    They can be called (invoked) from various parts of a program to execute the code contained within them.
+                </p>
+            </div>
+            <div class="chapter__content">
+                <h3 class="chapter__content-sub-subtitle">Types of Functions</h3>
+                <p class="chapter__content-paragraph">
+                    The text below was inspired by <a class="reference__link" href="https://medium.com/@ezinneanne/what-is-a-function-programming-7ff2a61dea8d" target="_blank">Ezinne Anne Emilia, article on Medium</a>.
+                </p>
+                <p class="chapter__content-paragraph">
+                    When it comes to programming, there two main types of functions, which are:
+                </p>
+                <ol class="list">
+                    <li class="list__item">
+                        <h4 class="list__item-title">Built-in functions</h4>
+                        <p class="list__item-text">
+                            Think of them as handy tools in your toolbox. These functions are already created by the programming language itself, being pre-built into the memory of the programming language, so you don't need to build them from scratch.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h4 class="list__item-title">User-defined functions</h4>
+                        <p class="list__item-text">
+                            In programming, user-defined functions are the ones you create yourself. They allow you to tailor the code to your specific needs.
+                        </p>
+                        <p class="list__item-text">
+                            Writing your own functions is a fundamental skill in programming. By breaking down problems into smaller, reusable functions, you create cleaner, more manageable code.
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="navigation__chapters">
+            <div class="navigation__chapters-buttons">
+                <a class="chapters-buttons__link" href="chapter_2.html">< Previous</a>
+                <a class="chapters-buttons__link" href="chapter_4.html">Next ></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4 class="footer__references-title">Inspired by</h4>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>
+        </h3>
+        <h3 class="footer__references-title">
+            <a class="footer__references-link" href="https://www.youtube.com/watch?v=zOjov 2OZ0E&ab_channel=freeCodeCamp.org">
+                Introduction to Programming and Computer Science
+            </a>
+        </h3>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+</body>
+</html>
